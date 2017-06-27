@@ -1,0 +1,72 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: helvetica;
+}
+
+/*****lANDING PAGE*****/
+
+.parallax { 
+    /* The image used */
+    background-image: url("images/coffee.jpeg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron{
+    margin: 0;
+    padding:0;
+    color: white;
+    text-align: center;
+}
+
+.jumbotron div {
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    padding-top: 20%;
+}
+
+.jumbotron h1{
+    font-family: 'Playfair Display', serif;
+}
+
+.jumbotron h2 {
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+.jumbotron hr {
+    color: lightgray;
+    width: 40%;
+}
+
+/******PROJECTS********/
+
+
+/*******ABOUT ME******/
+
+#about {
+    margin: 50px auto;
+    height: auto;
+}
+
+#mePic{
+    border-radius: 5%;
+    width: 90%;
+    -moz-box-shadow:    3px 3px 10px 1px black;
+    -webkit-box-shadow: 3px 3px 10px 1px black;
+    box-shadow:         3px 3px 10px 1px black; 
+}
+
+#aboutText{
+    margin-top: 4%;
+}
+
