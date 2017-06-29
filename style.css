@@ -55,6 +55,10 @@ body, html {
     transition: all 0.5s ease-out; 
 }
 
+.thumbnail > a img {
+    max-height:300px;
+}
+
 .thumbnail a:hover{
     text-decoration: none;
 }
@@ -68,8 +72,9 @@ body, html {
 /*******ABOUT ME******/
 
 #about {
-    margin: 50px auto;
+    padding: 50px auto;
     height: auto;
+    background-color:dimgray;
 }
 
 #mePic{
