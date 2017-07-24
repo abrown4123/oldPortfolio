@@ -1,7 +1,12 @@
 body, html {
     height: 100%;
+    padding:0;
     margin: 0;
     font-family: helvetica;
+}
+
+.row {
+    margin: 0;
 }
 
 /*****lANDING PAGE*****/
@@ -28,8 +33,6 @@ body, html {
 }
 
 .jumbotron div {
-    height: 100%;
-    background: rgba(0, 0, 0, .7);
     padding-top: 20%;
 }
 
@@ -49,7 +52,18 @@ body, html {
 }
 
 /******PROJECTS********/
-.thumbnail{
+#projects {
+    margin: 5em auto;
+}
+
+.container h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.thumbnail {
     -moz-transition: all 0.5s ease-out;
     -webkit-transition: all 0.5s eas-out;
     transition: all 0.5s ease-out; 
@@ -64,17 +78,19 @@ body, html {
 }
 
 .thumbnail:hover{
-     -moz-box-shadow:    1px 1px 1px 1px black;
-    -webkit-box-shadow: 1px 1px 1px 1px black;
-    box-shadow:         1px 1px 1px 1px black;
+     -moz-box-shadow:    5px 5px 5px #888888;
+    -webkit-box-shadow: 5px 5px 5px #888888;
+    box-shadow:         5px 5px 5px #888888;
 }
 
 /*******ABOUT ME******/
 
 #about {
-    padding: 50px auto;
-    height: auto;
-    background-color:dimgray;
+/*    background-color: #2F4F4F;*/
+    color: white;
+    display:flex; 
+    flex-direction: column;
+    justify-content: center;
 }
 
 #mePic{
@@ -85,7 +101,28 @@ body, html {
     box-shadow:         3px 3px 10px 1px black; 
 }
 
-#aboutText{
-    margin-top: 4%;
+#aboutText {
+    margin-top: 2em;
+    font-size: 1.2em;
+}
+
+#contactLinks{
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+
+#contactLinks a {
+    color: white;
+    margin: 0 1em;
+}
+
+#contactLinks a:hover {
+    color: black;
+}
+
+.overlay {
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
 }
 

@@ -3,13 +3,14 @@
     <head>
         <title>Anthony's Portfolio</title>
         <link rel = "stylesheet" type = "text/css" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+        <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
         <link href="https://fonts.googleapis.com/css?family=Advent+Pro:300" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Advent+Pro:700|Playfair+Display:700" rel="stylesheet">
         <link rel = "stylesheet" type = "text/css" href = "style.css"/>
     </head>
     <body>
         <div class = "parallax jumbotron">
-            <div>
+            <div class = "overlay">
                 <h1>Anthony Brown</h1>
                 <hr>
                 <h2>WEB DEVELOPER</h2>
@@ -18,45 +19,45 @@
         <div class = "container">
             <div id = "projects">
                 <h2>Projects</h2>
-                <div class = "row display-flex">
-                    <div class = "col-lg-6">
+                <div class = "row">
+                    <div class = "col-lg-3">
                     <h3>Wikipedia Viewer</h3>
                         <div class = "thumbnail">
                             <a href = "#">
                                 <img src = "images/Wiki.png">
                                 <div class = "caption">
-                                    <p><span>Technology Used:</span></p>
-                                    <p>Things about App</p>
+                                    <p><span>Technology Used:</span> HTML, CSS, JavaScript</p>
+                                    <p>Allows users to search Wikipedia using the MediaWiki API.</p>
                                 </div>
                             </a>
                         </div>
                     </div>
-                    <div class = "col-lg-6">
-                    <h3>RGB Color Game</h3>
+                    <div class = "col-lg-3">
+                        <h3>RGB Color Game</h3>
                         <div class = "thumbnail">
                             <a href = "#">
                                 <img src = "images/Color.png">
                                 <div class = "caption">
-                                    <p><span>Technology Used:</span></p>
-                                    <p>Things about App</p>
+                                    <p><span>Technology Used:</span> HTML, CSS, JavaScript, JQuery</p>
+                                    <p>Provides the user a RGB color code, which they then have to match to the correct color</p>
                                 </div>
                             </a>
                         </div>
                     </div>
-                    <div class = "col-lg-6">
+                    <div class = "col-lg-3">
                     <h3>Weather Page</h3>
-                        <div class = "thumbnail">
-                            <a href = "#">
-                                <img src = "images/Weather.png">
-                                <div class = "caption">
-                                    <p><span>Technology Used:</span></p>
-                                    <p>Things about App</p>
-                                </div>
-                            </a>
-                        </div>
+                    <div class = "thumbnail">
+                        <a href = "#">
+                            <img src = "images/Weather.png">
+                            <div class = "caption">
+                                <p><span>Technology Used:</span>HTML, CSS, JavaScript</p>
+                                <p>Things about App</p>
+                            </div>
+                        </a>
                     </div>
-                    <div class = "col-lg-6">
-                    <h3>NachoCritique</h3>
+                    </div>
+                    <div class = "col-lg-3">
+                        <h3>NachoCritique</h3>
                         <div class = "thumbnail">
                             <a href = "#">
                                 <img src = "https://pioneerwoman.files.wordpress.com/2013/05/8754705955_4ec22bcbd9_z.jpg?w=630&h=419">
@@ -69,14 +70,27 @@
                     </div>
                 </div>
             </div>
-            <div id = "about">
-                <div class = "row">
-                    <div class = "col-lg-6 col-md-6 col-sm-12">
-                        <img id = "mePic" class = "center-block" src = "images/me.JPG" alt = "A picture of Anthony Brown in college">
-                    </div>
-                    <div id = "aboutText" class = "col-lg-6 col-md-6 col-sm-12">
-                        <h3>About Me</h3>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+        </div>
+        <div class = "parallax">
+            <div id = "about" class = "overlay">
+                <div class = "container">
+                    <h2>About Me</h2>
+                    <div class = "row">
+                        <div class = "col-lg-6 col-md-6 col-sm-12">
+                            <img id = "mePic" class = "center-block" src = "images/me.JPG" alt = "A picture of Anthony Brown in college">
+                        </div>
+                        <div id = "aboutText" class = "col-lg-6 col-md-6 col-sm-12">
+                            <p>
+                                I love to troubleshoot and am fulfilled by being able to solve problems that are thought to be unsolvable. My desire to   tinker and fix issues led me to programming. I am constantly learning new things and love using what I learn to build real-world applications. 
+                            </p>
+                            <div id = "contactLinks">
+                                <a><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+                                <a><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+                                <a><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+                                <a><i class="fa fa-stack-overflow fa-2x" aria-hidden="true"></i></a>
+                                <a><i class="fa fa-file-pdf-o fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
