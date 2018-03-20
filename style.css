@@ -132,16 +132,17 @@ font-weight: bold;
 
 /*****MEDIA QUERIES*****/
 
-@media (max-width:500px){
+@media (max-width:500px), (orientation: landscape){
 
- 
-
-}
-
-@media (orientation:landscape) {
-
-  .landscape_div {
-    min-height: 900px;
+  .container {
+    margin: auto 0;
   }
 
+  .aboutMe_div {
+    min-height: 800px;
+  }
+
+  h1 {
+    font-size: 7rem;
+ }
 }
