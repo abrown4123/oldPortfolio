@@ -38,6 +38,7 @@ body, html {
 
 .jumbotron h1{
   font-family: 'Playfair Display', serif;
+  font-size: 7rem;
 }
 
 .jumbotron h2 {
@@ -130,19 +131,28 @@ font-weight: bold;
   background: rgba(0, 0, 0, .7);
 }
 
+.aboutMe_div {
+  min-height: 800px;
+}
+
 /*****MEDIA QUERIES*****/
 
-@media (max-width:500px), (orientation: landscape){
+@media (max-width:500px){
 
-  .container {
+  .jumbotron div {
+    padding-top: 40%;
+  }
+
+  #about .container {
     margin: auto 0;
   }
 
-  .aboutMe_div {
-    min-height: 800px;
+}
+
+@media (max-height: 425px){
+
+  .jumbotron div {
+    padding-top: 10%;
   }
 
-  h1 {
-    font-size: 7rem;
- }
 }
