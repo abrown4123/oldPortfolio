@@ -37,6 +37,7 @@ body, html {
 .jumbotron h1{
   font-family: 'Playfair Display', serif;
   font-size: 7rem;
+  margin-top: 0;
 }
 
 .jumbotron h2 {
