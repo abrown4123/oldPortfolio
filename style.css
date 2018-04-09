@@ -32,8 +32,6 @@ body, html {
   text-align: center;
 }
 
-
-
 .jumbotron h1{
   font-family: 'Playfair Display', serif;
   font-size: 7rem;
@@ -64,28 +62,47 @@ body, html {
   text-align: center;
 }
 
-.thumbnail {
+.project_overlay {
+  position: relative;
+}
+
+.project_overlay img {
   -moz-transition: all 0.5s ease-out;
   -webkit-transition: all 0.5s eas-out;
   transition: all 0.5s ease-out;
-}
-
-.thumbnail > a img {
-  max-height:300px;
-}
-
-.thumbnail a:hover {
-  text-decoration: none;
-}
-
-.thumbnail:hover{
-   -moz-box-shadow:    5px 5px 5px #888888;
+  -moz-box-shadow:    5px 5px 5px #888888;
   -webkit-box-shadow: 5px 5px 5px #888888;
   box-shadow:         5px 5px 5px #888888;
 }
 
-span {
-font-weight: bold;
+.project_overlay:hover img{
+  opacity: 0.3;
+}
+
+.portfolio_button {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  text-decoration: none;
+  padding: .5rem .75rem;
+  border: 3px solid #8b0000;
+  font-size: 2.5rem;
+  color:#8b0000;
+}
+
+.project_overlay:hover .portfolio_button {
+  opacity: 1;
+}
+
+.portfolio_button:hover {
+  background-color: #8b0000;
+  color:#ffffff;
+  text-decoration: none;
 }
 
 /*******ABOUT ME******/
@@ -144,6 +161,10 @@ font-weight: bold;
 
   #about .container {
     margin: auto 0;
+  }
+
+  .portfolio_button {
+    font-size: 1.5rem;
   }
 
 }
