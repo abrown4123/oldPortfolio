@@ -9,6 +9,9 @@ body, html {
   margin: 0;
 }
 
+a {
+  text-decoration: none !important;
+}
 /*****lANDING PAGE*****/
 
 .parallax {
@@ -88,11 +91,14 @@ body, html {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-  text-decoration: none;
   padding: .5rem .75rem;
   border: 3px solid #8b0000;
   font-size: 2.5rem;
   color:#8b0000;
+}
+
+.portfolio_button:active, .portfolio_button:visited {
+  color: #8b0000;
 }
 
 .project_overlay:hover .portfolio_button {
@@ -102,7 +108,6 @@ body, html {
 .portfolio_button:hover {
   background-color: #8b0000;
   color:#ffffff;
-  text-decoration: none;
 }
 
 /*******ABOUT ME******/
